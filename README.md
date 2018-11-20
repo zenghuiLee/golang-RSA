@@ -6,10 +6,12 @@
 与对称加密不同的是，银行不需要将私钥通过网络发送出去，因此安全性大大提高。
 目前最常用的非对称加密算法是RSA算法，是Rivest, Shamir, 和Adleman于1978年发明。
 
+![blockchain](https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/
+u=702257389,1274025419&fm=27&gp=0.jpg "区块链")
+
 # 流程分析：
 1.Bob构建密钥对儿，将公钥公布给Alice，将私钥保留。
 2.Alice使用公钥加密数据，向Bob发送经过加密后的数据；Bob获得加密数据，通过私钥解密。反之亦然。
-
 
 golang中也有RSA算法，请看下面的例子:
 
