@@ -8,9 +8,11 @@
 
 
 # 流程分析：
-1.Bob构建密钥对儿，将公钥公布给Alice，将私钥保留。
+1.Bob构建密钥对儿，将公钥公布给Alice，将私钥保留。  
+
 2.Alice使用公钥加密数据，向Bob发送经过加密后的数据；Bob获得加密数据，通过私钥解密。反之亦然。
 
+![process](./rsa.jpeg)
 
 golang中也有RSA算法，参考 rsa_code.go
 
