@@ -44,7 +44,7 @@ func genLicense(theMsg string) string {
    return license
 }
  
-// 私钥签名
+// private key signature 私钥签名
 func RsaSignature(message []byte) ([]byte, error) {
    rng := rand.Reader
    hashed := sha256.Sum256(message)
@@ -63,7 +63,7 @@ func RsaSignature(message []byte) ([]byte, error) {
    return signature, nil
 }
  
-// 公钥解密
+// public key verify 公钥解密
 func RsaSignatureVerify(message []byte, signature []byte) error {
    hashed := sha256.Sum256(message)
    block, _ := pem.Decode(publicKey)
